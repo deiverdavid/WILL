@@ -14,6 +14,13 @@ function buscarAmigo(amigos, nombre) {
   //  buscarAmigo(amigos, 'toni') debe devolver { nombre: 'toni', edad: 33 };
 
   // Tu código aca:
+  for (const key in amigos) {
+    if (Object.hasOwnProperty.call(amigos, key)) {
+      const element = object[key];
+      return element;
+      
+    }
+  }
   
 }
 
